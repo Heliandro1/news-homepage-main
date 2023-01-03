@@ -1,4 +1,32 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0em;
+    margin: 0em;
+    font-family: 'Inter', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 1em;
+    height: 4em;
+    min-width: 100vw;
+    background-color: hsl(36, 100%, 99%);
+}
+header > div.logo{
+    height: 80%;
+    min-width: 4em;
+    background: transparent url('../assets/images/logo.svg') no-repeat;
+    background-size: contain;
+}
+header > menu{
+    display: none;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

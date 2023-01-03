@@ -4,13 +4,15 @@
     padding: 0em;
     margin: 0em;
     font-family: 'Inter', sans-serif;
+    color: hsl(240, 100%, 5%);
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    padding: 1em;
+    position: sticky;
+    top: 0;
+    padding: 1.2em;
     height: 4em;
     min-width: 100vw;
     background-color: hsl(36, 100%, 99%);
@@ -21,12 +23,76 @@ header > div.logo{
     background: transparent url('../assets/images/logo.svg') no-repeat;
     background-size: contain;
 }
+button{
+    border: none;
+    font-size: 2rem;
+    background-color: hsl(36, 100%, 99%);
+    cursor: pointer;
+}
 header > menu{
     display: none;
 }
 ul{
     list-style-type: none;
     display: flex;
+}
+main{
+    min-width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+section{
+    max-width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+    
+}
+section.sect-news{
+    background-color: hsl(240, 100%, 5%);
+}
+section.web-3 > div.img-web{
+    background: transparent url('../assets/images/image-web-3-mobile.jpg') no-repeat;
+    background-size: cover;
+    min-height: 15em;
+    width: 100%;
+}
+section.web-3 > h1{
+    font-weight: 700;
+    font-size: 2rem;
+}
+section.web-3 > p{
+    color: hsl(236, 13%, 42%);
+    font-size: 0.9rem;
+}
+section.web-3 > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: hsl(5, 85%, 63%);
+    min-height: 2.3em;
+    width: 10em;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(36, 100%, 99%);
+    cursor: pointer;
+}
+section.sect-news > h1{
+    color: hsl(35, 77%, 62%);
+}
+section.sect-news > article > h1{
+    color: hsl(36, 100%, 99%);
+}
+section.sect-news > article > p{
+    color: hsl(233, 8%, 79%);
+    font-size: 0.8rem;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

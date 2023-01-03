@@ -94,5 +94,10 @@ section.sect-news > article > p{
     color: hsl(233, 8%, 79%);
     font-size: 0.8rem;
 }
+section.sect-news > article:not(section.sect-news > article:last-child){
+    min-height: 5em;
+    width: 100%;
+    border-bottom: 1px solid hsl(233, 8%, 79%);
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

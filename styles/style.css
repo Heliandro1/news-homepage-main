@@ -52,7 +52,6 @@ section{
     flex-direction: column;
     padding: 1em;
     gap: 1em;
-    
 }
 section.sect-news{
     background-color: hsl(240, 100%, 5%);
@@ -84,20 +83,90 @@ section.web-3 > a{
     color: hsl(36, 100%, 99%);
     cursor: pointer;
 }
+section.web-3 > a:hover{
+    background-color: hsl(240, 100%, 5%);
+}
 section.sect-news > h1{
     color: hsl(35, 77%, 62%);
 }
-section.sect-news > article > h1{
+section.sect-news > article > a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
     color: hsl(36, 100%, 99%);
 }
+section.sect-news > article > a:hover{
+    color: hsl(35, 77%, 62%);
+}
 section.sect-news > article > p{
-    color: hsl(233, 8%, 79%);
-    font-size: 0.8rem;
+    color: hsl(236, 13%, 42%);
+    font-size: 0.9rem;
+}
+section.sect-news > article{
+    min-height: 7em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
 }
 section.sect-news > article:not(section.sect-news > article:last-child){
-    min-height: 5em;
-    width: 100%;
-    border-bottom: 1px solid hsl(233, 8%, 79%);
+    border-bottom: 0.1em solid hsl(236, 13%, 42%);
 }
-.attribution { font-size: 11px; text-align: center; }
+section.others-articles {
+    padding: 0em;
+    margin-bottom: 2em;
+}
+section.others-articles > article{
+    display: flex;
+    height: auto;
+    gap: 1em;
+    min-width: 100%;
+}
+div.img-01{
+    background: transparent url('../assets/images/image-retro-pcs.jpg') no-repeat;
+    background-size: contain;
+    min-height: 7em;
+    width: 9em;
+}
+div.img-02{
+    background: transparent url('../assets/images/image-top-laptops.jpg') no-repeat;
+    background-size: contain;
+    min-height: 7em;
+    width: 9em;
+}
+div.img-03{
+    background: transparent url('../assets/images/image-gaming-growth.jpg') no-repeat;
+    background-size: contain;
+    min-height: 7em;
+    width: 9em;
+}
+div.article-body{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+div.article-body > span{
+    color: hsl(233, 8%, 79%);
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+div.article-body > p{
+    color: hsl(236, 13%, 42%);
+    font-size: 0.9rem;
+}
+div.article-body > a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+div.article-body > a:hover{
+    color: hsl(5, 85%, 63%);
+}
+.attribution { font-size: 11px; text-align: center; 
+    position: fixed;
+    bottom: 0;
+    min-width: 100%;
+    text-align: center;
+}
 .attribution a { color: hsl(228, 45%, 44%); }

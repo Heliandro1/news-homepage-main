@@ -41,7 +41,7 @@ button{
     margin-right: 1em;
 }
 header > menu{
-    display: flex;
+    display: none;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -58,7 +58,7 @@ ul{
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    padding: 5em 1.5em;
+    padding: 8em 1.5em;
 }
 ul > li{
     text-decoration: none;

@@ -6,6 +6,37 @@
                     'a3 a3';
         justify-items: center;
     }
+    button{
+        display: none;
+    }
+    header{
+        padding: 0em 2em;
+    }
+    header > menu{
+        display: flex;
+        height: 100%;
+        width: 30em;
+    }
+    ul{
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul > li{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 3em;
+        min-height: 3em;
+    }
+    ul > li > a{
+        text-decoration: none;
+    }
+    ul > li > a:hover{
+        color: hsl(5, 85%, 63%);
+    }
     section.web-3{
         grid-area: a1;
         display: grid;
@@ -25,9 +56,7 @@
     }
     section.web-3 > p{ grid-area: p; }
     section.web-3 > a{ grid-area: link;}
-    section.sect-news{
-        grid-area: a2;
-    }
+    section.sect-news{ grid-area: a2; }
     section.others-articles{
         grid-area: a3;
         flex-direction: row;

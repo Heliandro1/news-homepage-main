@@ -5,6 +5,7 @@
         grid-template-areas: 'a1 a2'
                     'a3 a3';
         justify-items: center;
+        height: 100vh;
     }
     button{
         display: none;
